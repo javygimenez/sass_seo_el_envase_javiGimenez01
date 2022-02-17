@@ -1,0 +1,35 @@
+/* EXTEND */
+
+.h2Header {
+    background-color: rgb(9, 171, 130);
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 10px;
+    font-style: italic;
+}
+
+.h2Header-nos {
+    @extend .h2Header;
+    background-color: black;
+    
+    
+}
+.h2Header-pro {
+    @extend .h2Header;
+    background-color: brown;
+}
+.h2Header-gal {
+    @extend .h2Header;
+    background-color: red;
+}
+.h2Header-con {
+    @extend .h2Header;
+    background-color: blue;
+}
+
+
+
+
+
+    

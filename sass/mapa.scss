@@ -1,0 +1,19 @@
+/* MAPA */
+
+$fondoSec:(
+    jabon: #a5f1de,
+    suavi: #aad3f3,
+    deso: rgb(167, 167, 238),
+    lav: rgb(185, 185, 121)
+);
+
+@each $clave, $valor in $fondoSec{
+    .bg-#{$clave} {
+        background-color: $valor;
+        border-radius: 1.5rem;
+        border: $valor;        
+    }
+}
+
+
+

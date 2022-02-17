@@ -1,0 +1,21 @@
+/*  MIXINS  */
+@mixin medidas ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.box-gal-uno{
+    @include medidas(480px, 640px)
+}
+
+.box-gal-dos{
+    @include medidas(320px, 480px)
+}
+
+.box-gal-tres{
+    @include medidas(320px, 480px)
+}
+
+.box-gal-cuatro{
+    @include medidas(600px, 800px)
+}

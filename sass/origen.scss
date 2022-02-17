@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@import "mapa";
+@import "extend";
+@import "mixins";
+
+
+
+
+
+/*   HEADER   */
+
+.fondoNav{
+    background-image: url("../img/imagen_header.jpg");
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.btnMenu{
+    width: 100px;
+}
+
+
+
+.btn-success:hover{
+    background-color: blue;
+}
+
+
+.h1header{
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(13, 68, 68);
+}
+
+
+.h2Header{
+    background-color: #09ab82;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 10px;
+    font-style: italic;
+}
+
+
+
+/* ASIDE */
+
+aside{
+    background-color: #3f0d12;
+    background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;   
+}
+.parAside{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;    
+}
+
+
+/* ANIMACIONES ASIDE */
+
+.animAside1{
+    animation-name: parrafoAside1;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+
+}
+
+@keyframes parrafoAside1 {
+    from {
+        transform: translate(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.animAside2{
+    animation-name: parrafoAside2;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+
+}
+
+@keyframes parrafoAside2 {
+    from {
+        transform: translate(+50px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* footer */
+
+footer{
+    background-color: #27282D;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul li{    
+    display: inline-block;
+}
+
+.iconoFooter{
+    width: 40px;
+    height: 40px;
+}
+
+.iconoFooter:hover{
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s;
+}
+
+
+/* EXTEND */
+
+.h2Header {
+    background-color: rgb(9, 171, 130);
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 10px;
+    font-style: italic;
+}
+
+.h2Header-nos {
+    @extend .h2Header;
+    background-color: black;
+}
+.h2Header-pro {
+    @extend .h2Header;
+    background-color: brown;
+}
+.h2Header-gal {
+    @extend .h2Header;
+    background-color: red;
+}
+.h2Header-con {
+    @extend .h2Header;
+    background-color: blue;
+}
+
+
+@font-face {
+    font-family: 'Open Sans', sans-serif !important;
+    src: url(../Open_Sans/static/OpenSans/OpenSans-Medium.ttf)
+}
+html {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px;
+}
+
+
+
+    
+
